@@ -12,7 +12,7 @@ namespace World
 {
     LifeSpace::LifeSpace( const Coordinate aFoodDistance )
             : mFood( aFoodDistance )
-            , mMinGenCount( static_cast<size_t>(std::min( std::get<0>(mFood), std::get<1>(mFood) ) ) )
+            , mMinGenCount( static_cast<size_t>(std::min( std::abs(std::get<0>(mFood)), std::abs(std::get<1>(mFood)) ) ) )
     {}
     
     const size_t LifeSpace::GetFitness( const Animals::IAnimalGenes& aAnimal ) const

@@ -12,8 +12,8 @@
 CCC = g++
 CXX = g++
 BASICOPTS = -g
-CCFLAGS = $(BASICOPTS) -ggdb -std=c++17
-CXXFLAGS = $(BASICOPTS) -ggdb -std=c++17
+CCFLAGS = $(BASICOPTS) -ggdb -std=c++17 -Wall
+CXXFLAGS = $(BASICOPTS) -ggdb -std=c++17 -Wall
 CCADMIN = 
 
 

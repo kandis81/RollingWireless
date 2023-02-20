@@ -12,7 +12,7 @@ namespace Animals
 {
     inline const Gene GetRandomGene()
     {
-        return static_cast<Gene>( (std::rand() % VALID_GENE_COUNT) + 1U );;
+        return static_cast<Gene>( (std::rand() % VALID_GENE_COUNT) + 1U );
     }
     
     inline const uint8_t GetRandomIndex( const GenePoolType aGenePool )
