@@ -1,0 +1,41 @@
+#################################
+# feladat
+#################################
+Tudnivalók:
+- Programozási nyelv: C++11 vagy felette
+- Határidő: jövő hét hétfő este, így lesz elég idő rá
+
+Szimuláljuk egy hangyaboly populációjának változását genetikus algoritmussal a következők alapján:
+- A hangyaboly népessége 100.
+- A hangyaboly környezete kétdimenziós koordinátarendszerben ábrázolható. Ebben a rendszerben a boly az origóban helyezkedik el.
+- Az egyes hangyák génállománya 20 irányból áll („le”, „fel”, „jobbra”, „balra”). Ez kezdetben (az első generációban) minden hangyánál véletlenszerű.
+- A hangyák rövid élete úgy zajlik, hogy az origóból indulva a génjeiknek megfelelő úton haladnak, majd ugyanazon az úton visszatérnek a talált élelemmel.
+- A boly közelében van egy ideális élelemforrás, a (10, 10)-es koordinátán (opcionális bemenő paraméter).
+- A generációváltás során azok a hangyák örökítik tovább génjeiket, amelyek a legközelebb kerültek a legjobb élelemforráshoz (fitness). Ez úgy működik, hogy az 50 legfittebb hangyából 25 párt választunk. Minden párban egy, véletlenszerű helyen kettévágjuk a génállományt és négy utódot képzünk: a1-a2, b1-b2 (ez megfelel a két szülőnek), a1-b2, b1-a2.
+- Az újszülöttek mutálódhatnak is, ami annyit tesz, hogy néhány, véletlenszerűen kiválasztott egyednek megváltoztatjuk az egyik génjét. Ennek valószínűsége legyen bemenő paraméter.
+
+A programnak elő kell állítania a hangyák generációját a fentiek alapján.
+Az algoritmus akkor áll meg, ha sikerül megtalálni a tökéletes hangyát,
+vagy elérjük az előre meghatározott generációkorlátot (bemenő paraméter).
+Az egyes generációk legfontosabb adatait valamilyen formában logolja a program.
+
+#################################
+# program jegyzetek
+#################################
+
+ - Lehet olyan eset, hogy soha nem juthatnak el a hangyák (az origó és az étel távolsága túl nagy...  a lírás szerint ez később változtatható)
+ - Avval nem foglalkoztam, hogy ha a koordináta érték átfordul (int32_t max + 1, int32_t min - 1)
+ - Invalid konfigurációs esetek vizsgálatát néhol kihagytam... pl.: populacio nem lehet kissebb, mint a kiválasztott egyedek száma a szaporodásra.
+ - Logolás lehetne még jobb, de egyenlőre elég a kiértékelésre.
+ - Nem írok hozzá bővebb logelemzést, remélem magától érthetődő lesz. A szoftver dokumentáció nem volt feladat.
+ - A komponensek dokumentációja sem részletesebb ugyanebből az okból kifolyólag.
+
+#################################
+# kimenet értelmezése
+#################################
+
+1. "Fitnesses [ ... ]"
+Látható, hogy iterációnként milyen kiszámolt értékek jöttek ki
+
+2. "F: Ant [ ... ]"
+A végén ki lehet elemezni, hogy tényleg eléri -e a hangya az élelmet.

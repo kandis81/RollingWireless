@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <in>Animals.cpp</in>
+      <in>Animals.h</in>
+      <in>Ant.cpp</in>
+      <in>Ant.h</in>
+      <in>IAnimalGenes.h</in>
+      <in>IParentAnimal.h</in>
+      <in>LifeSpace.cpp</in>
+      <in>LifeSpace.h</in>
+      <in>main.cpp</in>
+      <in>makefile</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir></buildCommandWorkingDir>
+          <buildCommand>make all</buildCommand>
+          <cleanCommand>make clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="Animals.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Animals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Ant.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Ant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IAnimalGenes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IParentAnimal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LifeSpace.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LifeSpace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="makefile" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
